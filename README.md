@@ -12,7 +12,7 @@ This repository incluides adata about animals in a vet clinic.
 
 <!-- AUTHORS -->
 
-👤 **JOSE ZEPEDA**
+👤 **Abubakar Ummar**
 
 - GitHub: [Abubakar Ummar](https://github.com/Haywayaheadshot)
 - Twitter: [@haywayalive](https://twitter.com/haywayalive)
