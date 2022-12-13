@@ -1,4 +1,4 @@
-# Vet_clinic
+# Vet Clinic
 
 
 ## Getting Started
