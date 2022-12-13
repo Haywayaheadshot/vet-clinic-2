@@ -2,7 +2,7 @@
 
 CREATE TABLE animals
 (
-    id integer,
+    id SERIAL PRIMARY KEY,
     name character varying(50),
     date_of_birth date,
     escape_attempts integer,
