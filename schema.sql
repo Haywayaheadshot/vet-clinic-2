@@ -93,7 +93,6 @@ CREATE TABLE public.visits
     animals_id integer,
     vets_id integer,
     date_of_visit date,
-    PRIMARY KEY (animals_id, vets_id),
     CONSTRAINT animals_id FOREIGN KEY (animals_id)
         REFERENCES public.animals (id) MATCH SIMPLE
         ON UPDATE NO ACTION
