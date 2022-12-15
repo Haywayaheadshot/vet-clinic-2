@@ -25,6 +25,8 @@ CREATE TABLE IF NOT EXISTS public.animals
     CONSTRAINT animals_pkey PRIMARY KEY (id)
 )
 
+-------------------
+
 /*Query multiple tables*/
 
 CREATE TABLE public.owners
@@ -56,3 +58,52 @@ ALTER TABLE animals
 ADD CONSTRAINT owner_id 
 FOREIGN KEY (owner_id) REFERENCES owners (id);
 
+
+-------------------
+/* Join Tables*/
+
+CREATE TABLE public.vets
+(
+    id integer NOT NULL GENERATED ALWAYS AS IDENTITY,
+    name character varying(255),
+    age integer,
+    date_of_graduation date,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE public.specializations
+(
+    species_id integer,
+    vets_id integer,
+    PRIMARY KEY (vets_id, species_id),
+    CONSTRAINT species_id FOREIGN KEY (species_id)
+        REFERENCES public.species (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID,
+    CONSTRAINT vets_id FOREIGN KEY (vets_id)
+        REFERENCES public.vets (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID
+);
+
+CREATE TABLE public.visits
+(
+    animals_id integer,
+    vets_id integer,
+    date_of_visit date,
+    PRIMARY KEY (animals_id, vets_id),
+    CONSTRAINT animals_id FOREIGN KEY (animals_id)
+        REFERENCES public.animals (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID,
+    CONSTRAINT vets_id FOREIGN KEY (vets_id)
+        REFERENCES public.vets (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID
+);
+
+-------------------
