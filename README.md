@@ -74,7 +74,7 @@ I would like to thank,
 
 ## 👥 Author <a name="authors"></a>
 
-👤 **Author**
+👤 **ABUBAKAR UMMAR**
 
 - GitHub: [@Haywayaheadshot](https://github.com/Haywayaheadshot)
 - Twitter: [@haywayalive](https://twitter.com/haywayalive)
