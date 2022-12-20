@@ -80,6 +80,12 @@ I would like to thank,
 - Twitter: [@haywayalive](https://twitter.com/haywayalive)
 - LinkedIn: [Abubakar Ummar](https://www.linkedin.com/in/abubakar-ummar/)
 
+👤 **NDORRH OSWALD EBU**
+
+- GitHub: [ndorrh](https://github.com/ndorrh)
+- Twitter: [@NdorrhEbu](https://twitter.com/NdorrhEbu)
+- LinkedIn: [ndorrh](https://linkedin.com/in/ndorrhoswaldebu)
+
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
