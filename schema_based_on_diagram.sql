@@ -31,4 +31,11 @@ CREATE TABLE IF NOT EXISTS public.medical_histories
         NOT VALID
 );
 
+CREATE TABLE public.treatments
+(
+    id bigint NOT NULL GENERATED ALWAYS AS IDENTITY,
+    type character varying,
+    name character varying(255),
+    PRIMARY KEY (id)
+);
 
