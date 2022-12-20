@@ -106,3 +106,13 @@ CREATE TABLE public.visits
 );
 
 -------------------
+-- Add an email column to your owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+--Create Indexes to optimize performance
+
+CREATE INDEX animal_index ON visits(id_animals);
+CREATE INDEX vet_index ON visits(id_vet);
+CREATE INDEX ON owners (email);
+
+

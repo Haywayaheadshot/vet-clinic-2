@@ -72,9 +72,9 @@ I would like to thank,
 
 <!-- AUTHORS -->
 
-## 👥 Author <a name="authors"></a>
+## 👥 Authors <a name="authors"></a>
 
-👤 **Author**
+👤 **ABUBAKAR UMMAR**
 
 - GitHub: [@Haywayaheadshot](https://github.com/Haywayaheadshot)
 - Twitter: [@haywayalive](https://twitter.com/haywayalive)
