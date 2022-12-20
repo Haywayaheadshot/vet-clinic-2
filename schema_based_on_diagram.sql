@@ -72,4 +72,24 @@ CREATE TABLE public.invoices
 );
 
 
+CREATE TABLE public.invoice_items
+(
+    id bigint NOT NULL,
+    unit_price double precision,
+    quantity bigint,
+    total_price double precision,
+    invoice_id bigint,
+    treatment_id bigint,
+    PRIMARY KEY (id),
+    CONSTRAINT invoice_id FOREIGN KEY (invoice_id)
+        REFERENCES public.invoices (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID,
+    CONSTRAINT treatment_id FOREIGN KEY (treatment_id)
+        REFERENCES public.treatments (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID
+);
 
