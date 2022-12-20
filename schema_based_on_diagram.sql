@@ -39,3 +39,20 @@ CREATE TABLE public.treatments
     PRIMARY KEY (id)
 );
 
+CREATE TABLE public.medical_histories_treatments
+(
+    treatments_id bigint,
+    medical_histories_id bigint,
+    CONSTRAINT treatments_id FOREIGN KEY (treatments_id)
+        REFERENCES public.treatments (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID,
+    CONSTRAINT medical_histories_id FOREIGN KEY (medical_histories_id)
+        REFERENCES public.medical_histories (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID
+);
+
+
