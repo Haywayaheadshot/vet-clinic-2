@@ -56,3 +56,20 @@ CREATE TABLE public.medical_histories_treatments
 );
 
 
+CREATE TABLE public.invoices
+(
+    id bigint NOT NULL,
+    total_amount double precision,
+    generated_at timestamp without time zone,
+    payed_at timestamp without time zone,
+    medical_history_id bigint,
+    PRIMARY KEY (id),
+    CONSTRAINT medical_history_id FOREIGN KEY (medical_history_id)
+        REFERENCES public.medical_histories (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID
+);
+
+
+
