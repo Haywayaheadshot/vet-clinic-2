@@ -72,7 +72,7 @@ I would like to thank,
 
 <!-- AUTHORS -->
 
-## 👥 Author <a name="authors"></a>
+## 👥 Authors <a name="authors"></a>
 
 👤 **ABUBAKAR UMMAR**
 
