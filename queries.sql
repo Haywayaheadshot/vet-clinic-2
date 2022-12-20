@@ -209,3 +209,9 @@ species.name
 
 
 ----------------------
+
+EXPLAIN ANALYZE SELECT COUNT(animals_id) FROM visits where animals_id = 4;
+EXPLAIN ANALYZE SELECT (vets_id) FROM visits where vets_id = 2;
+EXPLAIN ANALYZE SELECT DISTINCT(email) FROM owners where email = 'owner_18327@mail.com';
+
+----------------------
