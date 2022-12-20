@@ -93,3 +93,12 @@ CREATE TABLE public.invoice_items
         NOT VALID
 );
 
+-- FK Indexes
+
+CREATE INDEX treatment_index ON invoice_items(treatment_id);
+CREATE INDEX invoice_index ON invoice_items(invoice_id);
+CREATE INDEX medical_history_index ON invoices(medical_history_id);
+CREATE INDEX patient_index ON medical_histories(patient_id);
+CREATE INDEX treatments_index ON medical_histories_treatments(treatments_id);
+CREATE INDEX medical_histories_index ON medical_histories_treatments(medical_histories_id);
+
